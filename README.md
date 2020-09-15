@@ -1,6 +1,8 @@
-# PPP Configure for Embedded Linux Platfrom - 32 Bit ARM  
+# PPP Configure for Embedded Linux Platfrom - 32 Bit ARM
+
 
 /***********************************************************************************************************
+
  The following setps for compile and configure the PPP(Point to point Protocol) for 32 bit Embedded Platform
   * Host platform - Ubuntu 16.04
   * Target Platform - TI Am335x  Eval Board
