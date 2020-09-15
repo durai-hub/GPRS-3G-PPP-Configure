@@ -9,14 +9,14 @@
   * Network Platform - Ublox 3G Modem for  
 ************************************************************************************************************/
 
-#Step 1: 
+# Step 1: 
 
 Download the PPP from here,
 
 http://samba.org/ftp/ppp/ppp-2.4.4.tar.gz or Find the tar ball in Archive folder 
 
 
-#Step 2: 
+# Step 2: 
 
 Configure the PPP 
 
@@ -24,7 +24,7 @@ Configure the PPP
 
 
 
-#Step 3: 
+# Step 3: 
 
 Compile the PPP in host with cross compilation tool  
 
@@ -39,7 +39,7 @@ pppd in /pppd dir
 chat in /chat dir
 
 
-#Step 4: 
+# Step 4: 
 
 Copy the pppd and chat into target board rootfs /usr/sbin and change the permission with chmod 777 pppd chat 
 copy the pon and poff from /script to target board rootfs /usr/sbin 
@@ -48,7 +48,7 @@ copy the pon and poff from /script to target board rootfs /usr/sbin
 
 copy the ppp dir from /SDcardBackup/PPP/ to rootfs /etc 
 
-#step 6: 
+# Step 6: 
 
 in board linux prompt do the following action 
 
@@ -83,13 +83,13 @@ ppp0      Link encap:Point-to-Point Protocol
 
 Check the ppp0 was populated with ip address
 
-#Step 7: 
+# Step 7: 
 
 Add the ppp ip into kernel route map 
 root@am335x-evm://# ip route add 100.74.8.109 dev ppp0 
 root@am335x-evm://# route add default gw 100.74.8.109 ppp0
 
-#Step 8: 
+# Step 8: 
 
 The PPP0 should be added to route table and as default 
 
@@ -101,7 +101,7 @@ default         100.74.8.109    0.0.0.0         UG    0      0        0 ppp0
 
 
 
-#Step 9: 
+# Step 9: 
 
 Ping the WWW.google.com or google ip address 
 root@am335x-evm://# ping 173.194.70.147
