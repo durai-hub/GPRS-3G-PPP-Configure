@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "enter the APN"
+read name
+
+echo "enter the ATD Dial Number"
+read number
+
+
+cp gprs.chat.template gprs.chat
+
+sed -i -e s/APN/"$name"/g gprs.chat
+
+sed -i -e s/number/"$number"/g gprs.chat
+
+#echo "Connecting to Network"
+#poff
+#echo "Connecting.... It take few seconds...."
+#sleep 10
+
+
+#pon provider
+
+
+
+

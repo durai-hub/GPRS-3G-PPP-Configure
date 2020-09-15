@@ -1,0 +1,17 @@
+connect "/usr/sbin/chat -v -f /etc/ppp/gprs.chat #-T *99***1#"
+
+/dev/ttyO1
+115200
+
+noccp
+noauth
+updetach
+debug
+lock
+defaultroute
+#noipdefault
+usepeerdns 
+
+
+
+

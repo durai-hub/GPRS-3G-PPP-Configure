@@ -1,0 +1,6 @@
+#!/bin/sh
+#if [ "$USEPEERDNS" = "1" ] && [ -s /etc/ppp/resolv.conf ]
+#then
+        cp  /etc/ppp/resolv.conf /etc/resolv.conf
+        chmod 777 /etc/resolv.conf
+#fi

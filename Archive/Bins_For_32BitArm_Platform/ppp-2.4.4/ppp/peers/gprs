@@ -1,0 +1,22 @@
+
+# Replace inet.example.com with the proper APN for your provider
+
+connect  "/usr/sbin/chat -v -f /etc/ppp/peers/
+
+# Specify your cellphone serial port and speed below
+# Note: you must manually send some vendor-specific AT commands
+# to certain old cellular phones (such as Sony-Ericsson T200)
+# in order to achieve connection speed more than 9600 bits ber second.
+
+/dev/ttyO1
+115200
+
+# The settings below usually don't need to be changed
+noccp
+noauth
+updetach
+debug
+lock
+defaultroute
+noipdefault
+usepeerdns
